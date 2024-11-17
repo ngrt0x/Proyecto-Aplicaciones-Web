@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="../style/contenidoMenu/contacto.css" />
+    <link rel="stylesheet" href="../style/styles.css">
+    <!-- Script para los menús -->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   	<script src="../js/script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<img src="../imagenes/aramonCabeceraLogo2.png" alt="">
+		</div>
+		<!-- MENU-->
+        <div id='cssmenu'>
+            <nav id='menu'>
+				<input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+				<ul>
+				  <li><a href='index.html'>Inicio</a></li>
+				  <li><a class='dropdown-arrow' href='menuInformacion.html'>Información</a>
+					<ul class='sub-menus'>
+					  <li><a href='menuInformacionNoticias.html'>Noticias</a></li>
+					  <li><a href='indexAcercaNosotros.html'>Acerca de Nosotros</a></li>
+					  <li><a href='indexLegalidad.html'>Legalidad</a></li>
+					  <li><a href='indexPreguntasFrecuentes.html'>Preguntas</a></li>
+					</ul>
+				  </li>
+				  <li><a class='dropdown-arrow' href='menuGaleria.html'>Galería</a>
+					<ul class='sub-menus'>
+					  <li><a href='menuGaleriaVideos.html'>Videos</a></li>
+					  <li><a href='menuGaleriaImagenes.html'>Imágenes</a></li>
+					</ul>
+				  </li>
+				  <li><a href='menuTarifas.html'>Tarifas</a></li>
+				  <li><a href='menuOfertas.html'>Ofertas</a></li>
+				  <li><a href='menuContacto.html'>Contacto</a></li>
+				</ul>
+			  </nav>
+        </div>	
+        <!-- Div central -->		
+		<div id="middle">
+			<!--Panel izquierda --> 
+			<div id="content">
+				<h2>Datos de Registro</h2>
+				<form id="reservationForm">
+					<!-- Datos de Registro -->
+					<fieldset>
+						<legend><strong>Datos de Registro</strong></legend>
+						<div class="field-group">
+							<div class="field-item">
+								<label for="name">Nombre*:</label>
+								<input type="text" id="name" name="name" required>
+							</div>
+							<div class="field-item">
+								<label for="surname">Apellidos*:</label>
+								<input type="text" id="surname" name="surname" required>
+							</div>
+							<div class="field-item">
+								<label for="dni">DNI*:</label>
+								<input type="text" id="dni" name="dni" required>
+							</div>
+							<div class="field-item">
+								<label for="province">Provincia:</label>
+								<input type="text" id="province" name="province">
+							</div>
+							<div class="field-item">
+								<label for="email">Correo Electrónico:</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+							<div class="field-item">
+								<label for="birthdate">Fecha de Nacimiento:</label>
+								<input type="date" id="birthdate" name="birthdate">
+							</div>
+						</div>
+					</fieldset>
+		
+					<!-- Información del Cliente -->
+					<fieldset>
+						<legend><strong>Información del Cliente</strong></legend>
+						<div class="field-group">
+							<label>Deporte practicado:</label>
+							<div>
+								<input type="radio" id="ski" name="sport" value="Esquí" required>
+								<label for="ski">Esquí</label>
+								<input type="radio" id="snowboard" name="sport" value="Snowboard">
+								<label for="snowboard">Snowboard</label>
+								<input type="radio" id="alpino" name="sport" value="Esquí alpino">
+								<label for="alpino">Esquí alpino</label>
+							</div>
+						</div>
+		
+						<div class="field-group">
+							<label>Pistas favoritas:</label>
+							<div>
+								<input type="checkbox" id="green" name="track" value="Verdes">
+								<label for="green">Verdes</label>
+								<input type="checkbox" id="blue" name="track" value="Azules">
+								<label for="blue">Azules</label>
+								<input type="checkbox" id="red" name="track" value="Rojas">
+								<label for="red">Rojas</label>
+								<input type="checkbox" id="black" name="track" value="Negras">
+								<label for="black">Negras</label>
+							</div>
+						</div>
+		
+						<div class="field-item">
+							<label for="additionalInfo">Información adicional:</label>
+							<textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Escribe aquí..."></textarea>
+						</div>
+					</fieldset>
+		
+					<!-- Datos sobre la Reserva -->
+					<fieldset>
+						<legend><strong>Datos sobre la Reserva</strong></legend>
+						<div class="field-group">
+							<div class="field-item">
+								<label for="startDate">Fecha de ida:</label>
+								<input type="date" id="startDate" name="startDate" required>
+							</div>
+							<div class="field-item">
+								<label for="returnDate">Fecha de vuelta:</label>
+								<input type="date" id="returnDate" name="returnDate" required>
+							</div>
+							<div class="field-item">
+								<label for="stayLength">Albergue de estancia:</label>
+								<input type="text" id="stayLength" name="stayLength">
+							</div>
+							<div class="field-item">
+								<label for="level">Nivel máximo de pista:</label>
+								<select id="level" name="level">
+									<option value="Novato">Novato</option>
+									<option value="Intermedio">Intermedio</option>
+									<option value="Avanzado">Avanzado</option>
+									<option value="Experto">Experto</option>
+								</select>
+							</div>
+						</div>
+						<div class="field-group">
+							<label>Necesidad de equipamiento:</label>
+							<div>
+								<input type="radio" id="yesEquipment" name="equipment" value="Sí" required>
+								<label for="yesEquipment">Sí</label>
+								<input type="radio" id="noEquipment" name="equipment" value="No">
+								<label for="noEquipment">No</label>
+							</div>
+						</div>
+					</fieldset>
+		
+					<!-- Botones -->
+					<div class="button-container">
+						<button type="submit">Enviar</button>
+						<button type="reset">Borrar</button>
+					</div>
+				</form>		
+			</div>
+		<!-- #middle-->
+        </div>
+		<div id="footer">
+			<div id="footerIconos">
+				<a href="http://instagram.com/grupoaramon" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+				<a href="https://www.facebook.com/grupoaramon" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+				<a href="https://twitter.com/GrupoAramon" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+			</div>
+			<div id="footerContenido">
+				<ul>
+					<li><a href="../html/indexAcercaNosotros.html" target="_blank">Acerca de Nosotros</a><hr></li>
+					<li><a href="../html/indexLegalidad.html" target="_blank">Legalidad</a><hr></li>
+					<li><a href="../html/indexPreguntasFrecuentes.html" target="_blank">Preguntas Frecuentes</a><hr></li>
+				</ul>
+			</div>
+		</div>
+		<!-- #footer -->
+         <!-- ioicons-->
+         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</div>	
+</body>
+</html>

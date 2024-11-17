@@ -1,0 +1,94 @@
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+}
+
+/* DIV CONTENEDOR GENERAL */
+#wrapper {
+	width: auto;
+	margin: auto;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	background-image: url(../imagenes/aramonCabeceraFondo1.jpg);
+	background-size: cover;
+	height: auto;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header img {
+	height: 50%;
+	width: 50%;
+	padding: 20px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	height: 100%;
+    background-color: white; 
+    overflow: auto;
+}
+
+#content {
+    /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
+	width: 75%;
+	height: 100%;
+	float: left;
+    background-color: grey;
+}
+
+#sideRight {
+	float: right;
+	width: 25%;	
+	height: 100%;
+	background: #FFACAA;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	height: 100px;
+	width: 100%;
+	background-color: #282424 ;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+	clear: left;
+}
+#footer ion-icon {
+	margin-left: 15px;
+	margin-right: 15px;
+	color: white;
+	height: 35px;
+	width: 35px;
+	transition: color 0.2s ease;
+}
+#footer ion-icon:hover {
+	color: lightblue;
+}
+#footerContenido {
+	color: white;
+}
+#footerContenido a {
+	color: white;
+	text-decoration: none;
+}
+#footerContenido a:hover {
+	color: lightblue;
+	transition: color 0.2s ease;
+}
+#footerContenido ul {
+	display: flex;
+	list-style: none;
+}
+#footerContenido ul li {
+	margin-right: 20px;
+}

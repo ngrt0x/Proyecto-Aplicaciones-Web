@@ -1,0 +1,197 @@
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+}
+
+/* DIV CONTENEDOR GENERAL */
+#wrapper {
+	width: auto;
+	margin: 0px;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	background-image: url(../../imagenes/aramonCabeceraFondo1.jpg);
+	background-size: cover;
+	height: auto;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header img {
+	height: 50%;
+	width: 50%;
+	padding: 20px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;	
+	height: 100vh;
+    background-color: white; 
+    overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-container {
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px 30px;
+	width: 100%;
+	max-width: 900px;
+}
+
+.form-container h2 {
+	background-color: #007bff; /* Azul moderno */
+	color: white;
+	margin: 0 -30px 20px -30px;
+	padding: 15px;
+	border-radius: 10px 10px 0 0;
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+fieldset {
+	border: none;
+	margin-bottom: 20px;
+}
+
+.field-group {
+	display: flex;
+	flex-wrap: wrap; /* Permite ajuste en líneas si falta espacio */
+	gap: 20px;
+	margin-bottom: 15px;
+}
+
+.field-item {
+	flex: 1 1 calc(50% - 20px); /* Cada elemento ocupa el 50% menos el gap */
+}
+
+.field-item label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.field-item input[type="text"],
+.field-item input[type="email"],
+.field-item input[type="date"],
+.field-item select,
+.field-item textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1em;
+	background-color: #f9f9f9;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.field-item input:focus,
+.field-item textarea:focus,
+.field-item select:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+button[type="reset"] {
+	background-color: #e74c3c;
+}
+
+button[type="reset"]:hover {
+	background-color: #c0392b;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	height: 100px;
+	width: 100%;
+	background-color: #282424 ;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+	clear: left;
+}
+#footer ion-icon {
+	margin-left: 15px;
+	margin-right: 15px;
+	color: white;
+	height: 35px;
+	width: 35px;
+	transition: color 0.2s ease;
+}
+#footer ion-icon:hover {
+	color: lightblue;
+}
+#footer ion-icon:active {
+	color: white;
+}
+#footerContenido {
+	color: white;
+}
+#footerContenido a {
+	color: white;
+	text-decoration: none;
+}
+#footerContenido a:hover {
+	color: lightblue;
+	transition: color 0.2s ease;
+}
+#footerContenido a:active {
+	color: white;
+}
+#footerContenido ul {
+	display: flex;
+	list-style: none;
+}
+#footerContenido ul li {
+	margin-right: 20px;
+}
